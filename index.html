@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>start page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"> </script>
+	<title>J-query Popup Form</title>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script type="text/javascript" charset="utf8"
+		src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+
+</head>
+
+<body>
+	<h2>log in form</h2>
+	<div class="div1">
+		<form method="post" name="myForm">
+			<label for="Username">User Name</label>
+			<input type="text" class="inputText" placeholder="Student" name="username" id="Username" />
+			<br><br>
+			<label for="Password">Password</label>
+			<input type="password" class="inputText" placeholder="****" name="password" id="Password" />
+			<br><br>
+			<input name="log" type="button" class="btn btn-primary" id="logbutton" value="login"
+				onClick="myFunction()" />
+
+		</form>
+
+	</div>
+
+
+
+	<script>
+
+		function myFunction(){
+			var un = document.forms["myForm"]["username"].value;
+			var pw = document.forms["myForm"]["password"].value;
+
+			if (un == "Student" && pw == "1234") {
+				window.location.href = "file:///C:/Users/arsla/OneDrive/Desktop/site/welcomepage.html";
+				//window.location.href = "http://welcomepage.html";
+			}
+			else {
+				alert("invalid identity");
+			}
+
+		}
+
+
+
+	</script>
+
+</body>
+
+</html>
